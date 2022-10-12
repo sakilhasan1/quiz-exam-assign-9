@@ -1,6 +1,12 @@
 .question {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
     border: 1px solid gray;
+    border-radius: 15px;
     gap: 8px;
+    margin: 30px auto;
+    background-color: beige;
+}
+
+.option {
+    margin-left: 8px;
+    /* display: flex */
 }

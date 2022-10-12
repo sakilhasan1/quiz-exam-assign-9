@@ -6,30 +6,32 @@ import './QuizDetails.css'
 
 const QuizDetails = () => {
     const quiz = useLoaderData();
-    console.log(quiz.data.questions[0].options);
+
     const questions = quiz.data.questions;
-    const answers = quiz.data.questions[0].options;
+    // const answers = quiz.data.questions;
     return (
         <div>
             <h1>Wellcome Our exam hall</h1>
+
             <div className='questions.container'>
                 {
                     questions.map(question => <Question
                         question={question}
+                        ans={question.options}
 
                     ></Question>)
                 }
             </div>
+            {/* 
+            <div className='ans-container'>
+                {
+                    answers.map(ans => <Ans
+                        key={ans.id}
+                        ans={ans}
+                    ></Ans>)
+                }
+            </div> */}
 
-            {
-                answers.map(ans => <Ans
-                    ans={ans}
-                ></Ans>)
-            }
-            {/* <h4>Quiz: {quiz.data.questions[0].question}</h4> */}
-
-
-            {/* <p>{quiz.data.questions[0].options}</p> */}
 
         </div>
     );
