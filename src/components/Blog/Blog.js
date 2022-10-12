@@ -13,7 +13,7 @@ const Blog = () => {
             <p className='ans'>The React Context API is a way for a React app to effectively produce global variables that can be passed around. This is the alternative to "prop drilling" or moving props from grandparent to child to parent, and so on. Context is also touted as an easier, lighter approach to state management using Redux.</p>
             <h3 className='question'>how does use ref work?</h3>
             Ans:
-            <p className='ans'>use Ref returns a mutable ref object whose .current property is initialized to the passed argument ( initialValue ). The returned object will persist for the full lifetime of the component. Essentially, useRef is like a “box” that can hold a mutable value in its .current property.</p>
+            <p className='ans'>use Ref returns a mutable ref object whose .current property is initialized to the passed argument ( initialValue ). The returned object will persist for the full lifetime of the component. Essentially, useRef is like a “box” that can hold a mutable value in its .current property.Thanks for read.</p>
         </div>
 
     );
