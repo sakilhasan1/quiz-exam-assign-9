@@ -1,0 +1,11 @@
+.quiz {
+    border: 1px solid gray;
+    border-radius: 8px;
+    box-shadow: 4px 5px 8px gray;
+    padding-bottom: 5px;
+}
+
+.quiz img {
+    height: 250px;
+    background-color: blanchedalmond;
+}
