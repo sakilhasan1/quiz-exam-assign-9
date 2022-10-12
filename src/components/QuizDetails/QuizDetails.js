@@ -1,6 +1,5 @@
 import React from 'react';
 import { useLoaderData } from 'react-router-dom';
-import Ans from '../Ans/Ans';
 import Question from '../Question/Question';
 import './QuizDetails.css'
 
@@ -11,7 +10,7 @@ const QuizDetails = () => {
     // const answers = quiz.data.questions;
     return (
         <div>
-            <h1>Wellcome Our exam hall</h1>
+            <h1 className='board ' >Wellcome Our Quiz Board</h1>
 
             <div className='questions.container'>
                 {
@@ -22,17 +21,6 @@ const QuizDetails = () => {
                     ></Question>)
                 }
             </div>
-            {/* 
-            <div className='ans-container'>
-                {
-                    answers.map(ans => <Ans
-                        key={ans.id}
-                        ans={ans}
-                    ></Ans>)
-                }
-            </div> */}
-
-
         </div>
     );
 };

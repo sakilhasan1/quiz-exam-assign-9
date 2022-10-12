@@ -1,5 +1,4 @@
 import React from 'react';
-import Ans from '../Ans/Ans';
 import './Question.css'
 
 const Question = ({ question, ans }) => {
